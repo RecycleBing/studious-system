@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int largest;
+int [me]= {5,8,6,23,32,56,34};
+largest=me[0];
+for(int=0; i<10; i++) 
+{
+if (me[i]> largest)
+{
+largest=me[i];
+}
+}
+cout<<"Largest Element"<<largest<<endl;
+return 0;
