@@ -1,1 +1,120 @@
+#include<iostream>
+#include<windows.h>
+using namespace std;
+gotoxy{int x, int y}
 
+{
+COORD coord;
+coord.X=x;
+coord.Y=y;
+
+SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
+}
+int main(){
+int m;
+m;
+gotoxy(30,1);
+cout<<("List of Zodiac Sign");
+gotoxy(10,4);
+cout<<"Aquarius";
+gotoxy(25,4);
+cout<<"Pieces";
+gotoxy(40,4);
+cout<<"Aries";
+gotoxy(60,4);
+cout<<"Taurus";
+gotoxy(10,10);
+cout<<"Gemini";
+gotoxy(25,10);
+cout<<"Cancer";
+gotoxy(40,10);
+cout<<"Leo";
+gotoxy(60,10);
+cout<<"Virgo";
+gotoxy(10,20);
+cout<<"Libra";
+gotoxy(25,20);
+cout<"Scorpio";
+gotoxy(40,20);
+cout<<"Sagittarius";
+gotoxy(60,20);
+cout<<"Capricorn";
+}
+h:
+
+
+int month,date;
+cout<<"This Program Will Determine Your Zodiac 
+Sign."<<endl<<endl;
+while(true)
+{
+cout<<"Input Your Birth Month";
+cin>>month;
+cout<<"Input Your Birth Date";
+cin>>date;
+
+if(month==1 && date>= 21 && date<=31 || month==2 && date>=1 && date<=19)
+{ 
+cout<<" YOUR ZODIAC SIGN IS AQUARIUS"<<endl<<endl;
+}
+else if(month==2 && date>= 19 && date<=29 || month==3 && date>=1 && date<=20)
+{ 
+cout<<" YOUR ZODIAC SIGN IS PISCES"<<endl<<endl;
+}
+else if(month==2 && date>= 2 && date<=21 || month==3 && date>=1 && date<=19)
+{ 
+cout<<" YOUR ZODIAC SIGN IS ARIES"<<endl<<endl;
+}
+else if(month==2 && date>= 21 && date<=29 || month==3 && date>=1 && date<=21)
+{ 
+cout<<" YOUR ZODIAC SIGN IS TAURUS"<<endl<<endl;
+}
+else if(month==2 && date>= 22 && date<=29 || month==3 && date>=1 && date<=21)
+{ 
+cout<<" YOUR ZODIAC SIGN IS GEMINI"<<endl<<endl;
+}
+else if(month==2 && date>= 22 && date<=29 || month==3 && date>=1 && date<=22)
+{ 
+cout<<" YOUR ZODIAC SIGN IS CANCER"<<endl<<endl;
+}
+else if(month==2 && date>= 22 && date<=29 || month==3 && date>=1 && date<=22)
+{ 
+cout<<" YOUR ZODIAC SIGN IS LEO"<<endl<<endl;
+}
+else if(month==2 && date>=23  && date<= || month==3 && date>=1 && date<=22)
+{ 
+cout<<" YOUR ZODIAC SIGN IS VIRGO"<<endl<<endl;
+}
+else if(month==2 && date>= 23 && date<=29 || month==3 && date>=1 && date<=21)
+{ 
+cout<<" YOUR ZODIAC SIGN IS LIBRA"<<endl<<endl;
+}
+else if(month==2 && date>= 22 && date<=29 || month==3 && date>=1 && date<=21)
+{ 
+cout<<" YOUR ZODIAC SIGN IS SCORPIO"<<endl<<endl;
+}
+else if(month==2 && date>= 22 && date<=29 || month==3 && date>=1 && date<=21)
+{ 
+cout<<" YOUR ZODIAC SIGN IS SAGITTARIUS"<<endl<<endl;
+}
+else if(month==2 && date>= 22 && date<=29 || month==3 && date>=1 && date<=20)
+{ 
+cout<<" YOUR ZODIAC SIGN CAPRICORN "<<endl<<endl;
+}
+else
+{
+cout<<"incorrect input";
+system("pause");
+break;
+}
+}
+int a;
+cout<<" PRESS 1 TO CONTINUE OR ANY KEY TO END";
+cin>>a;
+if(a==1);
+{
+sytem("cls");
+goto h;
+}
+return 0;
+}
